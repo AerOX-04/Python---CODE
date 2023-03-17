@@ -13,8 +13,8 @@ def Bsort():
                     spin+=1
                     xct[j-1] , xct[j] = xct[j], xct[j-1]
     
-    print ( xct, spin)
-print("HENCE SORTING IS DONE ACCORDING TO ASCENDING ORDER")
+            print ( xct, spin)
+    print("HENCE SORTING IS DONE ACCORDING TO ASCENDING ORDER")
 Bsort()
 
 
