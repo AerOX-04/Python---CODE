@@ -1,0 +1,10 @@
+def funct():
+    str=input("Enter the desired words you want to enter : ")
+    count = len(str)
+    lst=[]
+    while count>0:
+        Xc=input("Enter the considered elements for the list : ")
+        lst.append(Xc)
+        count-=1
+    print(lst)
+funct()
