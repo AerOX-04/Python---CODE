@@ -1,0 +1,20 @@
+def Bsort():
+    num=int(input("Enter the number of elements you want to do sorting : "))
+    xct=[]
+    count=num
+    while count>0:
+        ds=int(input("Enter the elements you want from which you want to create a list : "))
+        xct.append(ds)
+        count-=1
+        spin=0
+        for i in range (len(xct)):
+            for j in range(1, len(xct)):
+                if xct[j-1]>xct[j]:
+                    spin+=1
+                    xct[j-1] , xct[j] = xct[j], xct[j-1]
+    
+    print ( xct, spin)
+print("HENCE SORTING IS DONE ACCORDING TO ASCENDING ORDER")
+Bsort()
+
+
