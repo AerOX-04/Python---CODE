@@ -1,0 +1,30 @@
+def ante():
+
+    new=input("\t \tEnter your name: ")
+    print("\tOh ! Hy ", new , "WELCOME TO THE SORTING INTERFACE \t")
+    count = int(input("Enter the number of cities you want to enter : "))
+    stuff=[]
+    
+    while count>0:
+        choice = input("Enter your choice (Yes/No): ")
+        if choice=='Yes':
+            new = input("Enter the name of the city of your choice:" )
+            count-=1
+        elif choice=='No':
+            print("No issue just input next time you wish to")
+        else:
+            print("ERROR ERROR ERROR .....")
+        stuff.append(new)
+
+    sql=[]
+    for i in stuff:
+        for j in range(len(i)):
+            if i[j:1]=='A':
+                sql.append(i)
+                       
+    print("Hence sorting is done from the below given cities---",'\n', stuff )
+    print("---Now This is your requested list of cities starting from letter A --- " ,'\t', sql)
+    
+ante()
+            
+
