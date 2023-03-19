@@ -1,0 +1,13 @@
+def linear_search(list,element):
+    found=0
+    for i in range(len(list)):
+        if list[i]==element:
+            print("SO THE SEARCHED ELEMENT IS FOUND TO BE PRESENT AT INDEX :" , i)
+            found=1
+            break
+    if found==0:
+        print("Element So Searched is not present in the list ")
+        
+list=eval(input("Enter the integers for the list :"))
+element=int(input("Enter the element to be searched : "))
+linear_search(list,element)
